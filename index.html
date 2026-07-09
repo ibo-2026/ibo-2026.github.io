@@ -133,13 +133,7 @@
   }
   .agenda-group-label:first-child{ margin-top:0; padding-top:0; border-top:none; }
 
-  /* SPEAKERS */
-  .speaker-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-  @media (max-width:680px){ .speaker-grid{ grid-template-columns:repeat(2,1fr); } }
-  @media (max-width:440px){ .speaker-grid{ grid-template-columns:1fr; } }
-  .speaker-card{ padding:14px 0; border-top:1px solid var(--line); }
-  .speaker-card .name{ font-weight:600; font-size:0.92rem; }
-  .speaker-card .aff{ font-size:0.82rem; color:var(--muted); }
+
 
   /* LOCATION */
   .loc-grid{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
@@ -174,7 +168,6 @@
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#agenda">Agenda</a></li>
-      <li><a href="#speakers">Speakers</a></li>
       <li><a href="#location">Location</a></li>
     </ul>
   </div>
@@ -242,24 +235,6 @@
     <div class="agenda-row plain"><div class="time">16:00 – 17:00</div><div class="topic">Informal networking or optional tours</div></div>
     <div class="agenda-row plain"><div class="time">17:00 – 18:00</div><div class="topic">Break</div></div>
     <div class="agenda-row plain"><div class="time">18:00 – 20:00</div><div class="topic">Dinner at Ripple &amp; Co. <span class="speaker">— 1007 Main St., Lafayette</span></div></div>
-  </div>
-</section>
-
-<section id="speakers">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Speakers</h2>
-    </div>
-    <div class="speaker-grid">
-      <div class="speaker-card"><div class="name">Kevin Kircher</div><div class="aff">Purdue University</div></div>
-      <div class="speaker-card"><div class="name">Gregor Henze</div><div class="aff">University of Colorado Boulder</div></div>
-      <div class="speaker-card"><div class="name">Elias Pergantis</div><div class="aff">Trane Technologies</div></div>
-      <div class="speaker-card"><div class="name">Ozan Baris</div><div class="aff">Google</div></div>
-      <div class="speaker-card"><div class="name">Mario Bergés</div><div class="aff">Carnegie Mellon University</div></div>
-      <div class="speaker-card"><div class="name">Ettore Zanetti</div><div class="aff">Lawrence Berkeley National Laboratory</div></div>
-      <div class="speaker-card"><div class="name">Robert Grob</div><div class="aff">Esslingen University of Applied Sciences</div></div>
-      <div class="speaker-card"><div class="name">Todd Rossi</div><div class="aff">Rutgers University</div></div>
-    </div>
   </div>
 </section>
 
