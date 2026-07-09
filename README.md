@@ -1,47 +1,23 @@
-# IBO 2026 — Intelligent Building Operations Workshop
+# Intelligent Building Operations Workshop 2026
 
-Site for the 2026 Intelligent Building Operations Workshop, held Sunday,
-July 12, 2026 at Rawls Hall, Purdue University. Part of the Herrick
-Conferences series. Coordinated by Kevin Kircher (Purdue) and Gregor Henze
-(CU Boulder).
+The 2026 Intelligent Building Operations (IBO) Workshop brings together
+researchers, industry practitioners, and educators working on advanced
+design and control methods, data analytics, fault detection and
+diagnostics, predictive maintenance, and other software and
+instrumentation techniques for building systems — with the aim of
+improving occupant experience, reducing operating and maintenance costs,
+cutting pollutant emissions, and connecting buildings more intelligently
+to the power grid.
 
-Live at: **https://ibo-2026.github.io/**
+The workshop runs as a single day with two sessions: a morning on
+research, featuring speakers from industry, academia, and national
+laboratories, and an afternoon on education, looking at how universities
+teach IBO today and how curricula could evolve.
 
-## Publishing this site
+**Date:** Sunday, July 12, 2026
+**Venue:** Rawls Hall, Purdue University, West Lafayette, IN
+**Coordinated by:** Kevin Kircher (Purdue University) and Gregor Henze
+(University of Colorado Boulder)
+**Series:** Herrick Conferences
 
-1. This repo must be named exactly `ibo-2026.github.io` inside the
-   `ibo-2026` GitHub organization — that exact name is what gives it the
-   clean root URL instead of a nested path.
-2. Push this repo's contents to `main` on
-   `github.com/ibo-2026/ibo-2026.github.io`.
-3. In the repo, go to **Settings → Pages** and set the source to
-   **Deploy from a branch → main → / (root)**.
-4. Make sure the repo is **Public** — GitHub Pages does not publish free
-   private-repo sites on the org's Free plan.
-5. The site will be live at `https://ibo-2026.github.io/` within a few
-   minutes.
-
-## Editing content
-
-Everything lives in a single `index.html` file (styles are inlined in a
-`<style>` block, no build step required). To update:
-
-- **Agenda** — edit the rows inside `<section id="agenda">`.
-- **Speakers** — edit the cards inside `<section id="speakers">`.
-- **Dates / venue** — update the `<span class="eyebrow">` in the hero and
-  the `.meta-strip` items.
-
-## For future years
-
-This workshop uses a fresh, year-named GitHub organization each year
-(e.g. `ibo-2027`) rather than one org holding every year, so each year's
-repo can be named `<year>.github.io` and get a clean root URL like
-`https://ibo-2027.github.io/`. To start a new year:
-
-1. Create a new org named for that year (e.g. `ibo-2027`).
-2. Inside it, create a repo named exactly `ibo-2027.github.io`.
-3. Copy this repo's `index.html` as a starting point, update the hero,
-   agenda, speakers, and location sections.
-4. Publish via GitHub Pages as above.
-5. Invite the workshop's coordinators (Kevin Kircher, Gregor Henze, or
-   that year's host) as Owners so the org isn't tied to one person.
+Site: https://ibo-2026.github.io/
