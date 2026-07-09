@@ -7,7 +7,7 @@
 <meta name="description" content="2026 Intelligent Building Operations Workshop, Purdue University, July 12, 2026. Coordinated by Kevin Kircher (Purdue University) and Gregor Henze (University of Colorado Boulder).">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#faf7f1;
@@ -40,9 +40,10 @@
   a{ color:inherit; }
   .wrap{ max-width:880px; margin:0 auto; padding:0 26px; }
   .eyebrow{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:0.76rem;
-    letter-spacing:0.12em;
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:0.78rem;
+    font-weight:600;
+    letter-spacing:0.02em;
     text-transform:uppercase;
     color:var(--gold-deep);
   }
@@ -94,7 +95,7 @@
     margin-top:38px; padding-top:22px; border-top:1px solid var(--line);
   }
   .meta-strip .label{
-    font-family:'IBM Plex Mono', monospace; font-size:0.68rem; letter-spacing:0.09em;
+    font-family:'IBM Plex Sans', sans-serif; font-size:0.72rem; font-weight:600; letter-spacing:0.02em;
     text-transform:uppercase; color:var(--muted); margin-bottom:3px;
   }
   .meta-strip .value{ font-size:0.92rem; }
@@ -111,12 +112,8 @@
 
   /* ABOUT */
   #about p{ color:#4b463f; max-width:680px; margin:0 0 14px; }
-  #about .tags{ display:flex; gap:10px; flex-wrap:wrap; margin-top:18px; }
-  #about .tag{
-    font-family:'IBM Plex Mono', monospace; font-size:0.74rem;
-    padding:6px 12px; border:1px solid var(--line); border-radius:999px;
-    color:var(--gold-deep); background:var(--bg-alt);
-  }
+  #about .focus{ font-size:0.9rem; color:var(--muted); margin-top:16px; }
+  #about .focus strong{ color:var(--ink); font-weight:600; }
 
   /* AGENDA */
   .agenda-row{
@@ -125,16 +122,16 @@
   }
   .agenda-row.plain .topic{ color:var(--muted); }
   .agenda-row .time{
-    font-family:'IBM Plex Mono', monospace; font-size:0.82rem; color:var(--gold-deep); white-space:nowrap;
+    font-family:'IBM Plex Sans', sans-serif; font-weight:500; font-size:0.86rem; color:var(--gold-deep); white-space:nowrap;
   }
   .agenda-row.plain .time{ color:var(--muted); }
   .agenda-row .topic{ font-size:0.94rem; }
   .agenda-row .topic .speaker{ color:var(--muted); font-size:0.87rem; }
   .agenda-group-label{
-    font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.08em;
-    text-transform:uppercase; color:var(--gold-deep); margin:26px 0 6px;
+    font-family:'IBM Plex Sans', sans-serif; font-size:0.98rem; font-weight:600;
+    color:var(--ink); margin:30px 0 8px; padding-top:14px; border-top:1px solid var(--line);
   }
-  .agenda-group-label:first-child{ margin-top:0; }
+  .agenda-group-label:first-child{ margin-top:0; padding-top:0; border-top:none; }
 
   /* SPEAKERS */
   .speaker-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
@@ -149,7 +146,7 @@
   @media (max-width:640px){ .loc-grid{ grid-template-columns:1fr; } }
   .loc-card{ padding:0; }
   .loc-card .tag{
-    font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.09em;
+    font-family:'IBM Plex Sans', sans-serif; font-size:0.72rem; font-weight:600; letter-spacing:0.02em;
     text-transform:uppercase; color:var(--gold-deep); margin-bottom:8px; display:block;
   }
   .loc-card h3{ font-size:1.05rem; margin-bottom:5px; }
@@ -165,7 +162,7 @@
   footer .col a{ color:var(--gold-deep); text-decoration:none; }
   footer .bottom{
     display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
-    font-size:0.76rem; color:var(--muted); font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem; color:var(--muted);
   }
 </style>
 </head>
@@ -186,7 +183,7 @@
 <header class="hero">
   <div class="wrap">
     <span class="eyebrow">Purdue University · Rawls Hall · July 12, 2026</span>
-    <h1>Intelligent Building Operations (IBO) Workshop</h1>
+    <h1>2026 Intelligent Building Operations (IBO) Workshop</h1>
     <p class="lede">Advanced controls, data analytics, fault detection, and predictive maintenance for the systems that heat, cool, light, and power our buildings — and connect them to the grid.</p>
     <p class="coord">Organized by <strong>Kevin Kircher</strong> (Purdue University) and <strong>Gregor Henze</strong> (University of Colorado Boulder)</p>
     <div class="cta-row">
@@ -212,11 +209,6 @@
     <p>Intelligent Building Operations (IBO) covers advanced design and control methods, data analytics, fault detection and diagnostics, predictive maintenance, and other software and instrumentation techniques applied to heating, cooling, ventilation, lighting, and other building systems.</p>
     <p>IBO technologists generally aim to improve the occupant experience, reduce operating and maintenance costs, mitigate pollutant emissions, and enhance interactivity between buildings and power grids.</p>
     <p>The 2026 workshop runs as one day with two sessions: a morning on research, with speakers from industry, academia, and national laboratories discussing recent findings and newly developed tools; and an afternoon on education, examining how universities teach IBO today and how curricula could better serve the evolving needs of research groups and industry practitioners.</p>
-    <div class="tags">
-      <span class="tag">Design &amp; control</span>
-      <span class="tag">Data &amp; diagnostics</span>
-      <span class="tag">Grid interactivity</span>
-    </div>
   </div>
 </section>
 
@@ -230,14 +222,14 @@
     <div class="agenda-row plain"><div class="time">8:30 – 9:00</div><div class="topic">Breakfast</div></div>
     <div class="agenda-row plain"><div class="time">9:00 – 9:30</div><div class="topic">Welcome and introductions</div></div>
 
-    <div class="agenda-group-label">Research 1 — Comparative Field Deployment of MPC and Reinforcement Learning for Residential HVAC</div>
+    <div class="agenda-group-label">Research 1 — Comparative Field Deployment of Model Predictive Control and Reinforcement Learning for Residential HVAC</div>
     <div class="agenda-row"><div class="time">9:30 – 9:50</div><div class="topic">MPC field deployment <span class="speaker">— Elias Pergantis (Trane Technologies)</span></div></div>
     <div class="agenda-row"><div class="time">9:50 – 10:10</div><div class="topic">RL field deployment <span class="speaker">— Ozan Baris (Google)</span></div></div>
     <div class="agenda-row"><div class="time">10:10 – 10:30</div><div class="topic">Moderated discussion <span class="speaker">— Mario Bergés (Carnegie Mellon University)</span></div></div>
     <div class="agenda-row plain"><div class="time">10:30 – 11:00</div><div class="topic">Coffee break</div></div>
 
     <div class="agenda-group-label">Research 2 — Empowering the Next Generation of Building Professionals: Leveraging BOPTEST for Education, Workforce Training, and AI Experimentation</div>
-    <div class="agenda-row"><div class="time">11:00 – 12:00</div><div class="topic">Ettore Zanetti <span class="speaker">(Lawrence Berkeley National Laboratory)</span></div></div>
+    <div class="agenda-row"><div class="time">11:00 – 12:00</div><div class="topic"><span class="speaker">Ettore Zanetti (Lawrence Berkeley National Laboratory)</span></div></div>
     <div class="agenda-row plain"><div class="time">12:00 – 13:00</div><div class="topic">Lunch</div></div>
 
     <div class="agenda-group-label">Education presentations</div>
