@@ -1,3 +1,5 @@
+![Intelligent Building Operations Workshop 2026](ibo-2026.jpg)
+
 # Intelligent Building Operations Workshop 2026
 
 The 2026 Intelligent Building Operations (IBO) Workshop brings together researchers, industry practitioners, and educators working on advanced design and control methods, data analytics, fault detection and diagnostics, predictive maintenance, and other software and instrumentation techniques for building systems — with the aim of improving occupant experience, reducing operating and maintenance costs, cutting pollutant emissions, and connecting buildings more intelligently to the power grid.
