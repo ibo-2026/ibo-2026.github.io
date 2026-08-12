@@ -12,3 +12,4 @@ The workshop runs as a single day with two sessions: a morning on research, feat
 - **Series:** [Herrick Conferences](https://chpb.engineering.purdue.edu/herrick-conferences/)
 
 **Site:** https://ibo-2026.github.io/
+**Talks:** [Watch on YouTube](https://www.youtube.com/playlist?list=PLHeT_pwwAIjc)
